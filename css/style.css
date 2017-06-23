@@ -1,0 +1,139 @@
+html, .site-bg {
+  background-color: #C6CD91;
+}
+
+p {
+  font-weight: 300;
+}
+
+
+/**********************
+/* Header
+ *********************/
+
+.logo {
+  height: 45px;
+}
+
+.navbar-container {
+  /*height: 75px;*/
+  margin-bottom: 50px;
+}
+
+.nav-padding {
+  margin-right: 20px;
+}
+
+.nav-custom-active {
+  background-color: #e7e7e7;
+}
+
+
+/**********************
+/* Main
+ *********************/
+
+.main-container {
+  height: 100%;
+}
+
+.main-img-container img {
+  width: 100%;
+}
+
+.main-intro {
+  padding: 50px;
+}
+
+
+/**********************
+/* About
+ *********************/
+
+.about-mission {
+  color: white;
+  text-align: center;
+  background-color: #554232;
+  padding: 50px 215px;
+}
+
+.about-photo {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.about-family {
+  padding: 20px;
+}
+
+
+/**********************
+/* Shop
+ *********************/
+
+.order-instructions {
+  padding: 80px 100px;
+}
+
+.form-order-padding {
+  padding: 50px 10px;
+  display: block;
+}
+
+
+/**********************
+/* Locator
+ *********************/
+
+.form-locator-padding {
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+.map-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 55px;
+  background-color: lightgray;
+}
+
+#address, #distance, #submit {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+
+/**********************
+/* Resources
+ *********************/
+
+.video-padding {
+  padding: 40px 50px;
+}
+
+.media-thumb {
+  width: 100px;
+  height: 100px;
+}
+
+.spacer {
+  padding-top: 20px;
+}
+
+
+/**********************
+/* Footer
+ *********************/
+
+.footer-container {
+  color: white;
+  background-color: #445511;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}

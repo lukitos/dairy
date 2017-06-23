@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Locator</title>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Website JavaScript -->
+  <script defer type="text/javascript" src="script/locator.js"></script>
+
+  <!-- Google Map -->
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCfFAPJMbTUOI5RZphK9sY_87xQs6H4yk&callback=initMap" type="text/javascript"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCfFAPJMbTUOI5RZphK9sY_87xQs6H4yk" type="text/javascript"></script> -->
+
+  <!-- Website CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="navbar navbar-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="logo" alt="Main">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-padding">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="nav-custom-active"><a href="locator.html">Locator</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <div class="row site-bg">
+      <form id="locator_frm" class="form-inline" method="post">
+        <div class="col-sm-7 form-locator-padding">
+        <input type="text" id="address" name="address" class="form-control" placeholder="Enter address">
+        </div>
+        <div class="col-sm-3 form-locator-padding">
+          <select class="form-control" id="distance" name="distance">
+            <option value="5">5 miles</option>
+            <option value="10">10 miles</option>
+            <option value="20">20 miles</option>
+            <option value="30">30 miles</option>
+            <option value="40">40 miles</option>
+          </select>
+        </div>
+        <div class="col-sm-2 form-locator-padding">
+        <input type="submit" id="submit" class="btn btn-primary" value="Locate">
+      </div>
+      </form>
+      <div id="googleMap" class="map-container"></div>
+    </div>
+
+    <div class="row footer-container">
+      <div class="col-md-4">25208 S Higley Road, Queen Creek, AZ 85242</div>
+      <div class="col-md-4">Store Hours: Thursday and Saturday 8:30 AM - 4:00 PM</div>
+      <div class="col-md-4"> 480-279-4474</div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

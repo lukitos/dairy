@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop</title>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Paypal script -->
+  <script defer type="text/javascript" src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+  <!-- Website CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Website JavaScript -->
+  <script defer type="text/javascript" src="script/shop.js"></script>
+
+</head>
+
+<body onload="payPalPayment()">
+
+  <div class="container-fluid">
+
+    <div class="navbar navbar-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="logo" alt="Main">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-padding">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-custom-active"><a href="shop.html">Shop</a></li>
+        <li><a href="locator.html">Locator</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+
+    <div class="row site-bg">
+
+      <div class="col-md-6">
+        <form id="shop" class="form-horizontal form-order-padding">
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10"><input type="text" class="form-control" id="name" placeholder="Enter name"></div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-10"><input type="email" class="form-control" id="email" placeholder="Enter email"></div>
+          </div>
+          <div class="form-group">
+            <label for="sel1" class="col-sm-2 control-label">Pickup at:</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="loc">
+                  <option>Farm shop</option>
+                  <option>Gilbert 1</option>
+                  <option>Gilber 2</option>
+                  <option>Mesa 1</option>
+                  <option>Queen Creek 1</option>
+                </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pickup" class="col-sm-2 control-label">Pickup Day:</label>
+            <div class="col-sm-10">
+              <label class="radio-inline"><input type="radio" name="pickup">Thursday</label>
+              <label class="radio-inline"><input type="radio" name="pickup">Saturday</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="qty" class="col-sm-2 control-label">Quantity:</label>
+            <div class="col-sm-4"><input type="number" class="form-control" id="qty" placeholder="Enter quantity"></div>
+            <label for="howtopay" class="col-sm-2 control-label">Payment:</label>
+            <div class="col-sm-4">
+              <label class="radio-inline"><input type="radio" value="0" name="howtopay">Cash</label>
+              <label class="radio-inline"><input type="radio" value="1" name="howtopay" checked="checked">Paypal</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment" class="col-sm-2 control-label">Comment:</label>
+            <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment"></textarea></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+              <div id="paypal-btn"></div>
+              <div id="submit-btn" style="display:none">
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                <br><br>
+                <p><b>***Note:</b> We appreciate exact change for cash payments during pickup</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6 order-instructions">
+        <h4>Ordering Instructions</h4>
+        <p>Milk is &#36;10 per gallon. Please order as soon as you can after you get the Reminder... You will need to fill out the order form each week, as it’s not possible to keep track of “standing orders.” THE SPREADSHEET WITH ORDERS WILL BE SENT TO
+          THE DAIRY ON TUESDAY AND THURSDAY EVENING, DEPENDING ON THE PICK UP DAY REQUESTED! If your name is not on the list by then, they may not have enough milk put aside for the Farm Shop milk group (you). </p>
+        <p>If you need to change your order, just use the order link again and put “Updated Order” in the comments box so we know what you want.</p>
+        <p>Milk can be picked up until 3 PM on the day you select. After 3 PM, all milk will be available to walk-ins, whether or not their name is on our list. If you aren’t going to be able to pick up your milk — or have someone pick it up for you—please
+          give us a call (480-279-4474) so we can place it in the walk-in section available to anyone!.</p>
+        <p></p>
+      </div>
+
+    </div>
+
+    <div class="row footer-container">
+      <div class="col-md-4">25208 S Higley Road, Queen Creek, AZ 85242</div>
+      <div class="col-md-4">Store Hours: Thursday and Saturday 8:30 AM - 4:00 PM</div>
+      <div class="col-md-4"> 480-279-4474</div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
