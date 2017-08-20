@@ -20,9 +20,9 @@ Time constraints:
 My role in this project:
 * I am the sole developer for this project
 
-### Demo
+### Link to live site
 
-TBD
+http://mydairy.surge.sh/
 
 ### Summary
 
