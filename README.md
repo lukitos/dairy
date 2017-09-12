@@ -22,7 +22,7 @@ My role in this project:
 
 ### Links
 
-* [Recorded Demo](https://youtu.be/0cU9AeH2Zgo)
+* [Recorded Demo](https://youtu.be/pbSeCmczc4c)
 * [Live site](http://mydairy.surge.sh/)
 
 ### Summary
