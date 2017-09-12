@@ -20,9 +20,10 @@ Time constraints:
 My role in this project:
 * I am the sole developer for this project
 
-### Link to live site
+### Links
 
-http://mydairy.surge.sh/
+* [Recorded Demo](https://youtu.be/0cU9AeH2Zgo)
+* [Live site](http://mydairy.surge.sh/)
 
 ### Summary
 
