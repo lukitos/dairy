@@ -25,7 +25,7 @@ My role in this project:
 * [Recorded Demo](https://youtu.be/pbSeCmczc4c)
 * [Live site](http://mydairy.surge.sh/)
 
-[![Dairy Farm](https://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](https://youtu.be/pbSeCmczc4c)
+[![Dairy Farm](https://github.com/lukitos/dairy/blob/master/images/dairy.png)](https://youtu.be/pbSeCmczc4c)
 
 ### Summary
 
