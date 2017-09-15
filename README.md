@@ -25,6 +25,8 @@ My role in this project:
 * [Recorded Demo](https://youtu.be/pbSeCmczc4c)
 * [Live site](http://mydairy.surge.sh/)
 
+[![Dairy Farm](https://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](https://youtu.be/pbSeCmczc4c)
+
 ### Summary
 
 This project enhances the dairy's customers experience and increases the farm's efficiency by reducing manual processes. Customers can now order raw milk at anytime without having to wait for the email to arrive. They can also use the self-serve features of the website to locate the closest pickup location.
